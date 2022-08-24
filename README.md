@@ -2,4 +2,4 @@
 
 ## 数理統計
 
-- [収束について](stat_convergence.md)
+- [収束について](stat/stat_convergence.md)
