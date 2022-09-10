@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>korsq-que</title>
+    <link>https://korsq.github.io/</link>
+    <description>Recent content on korsq-que</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://korsq.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://korsq.github.io/post/atcoder/cheet_sheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/post/atcoder/cheet_sheet/</guid>
+      <description>四則演算 a // b # 商を切り下げたもの：3//2=1（1.5を1に切り下げ） a % b # 剰余：3%2=1 標準入力を受け取る 行数指定あり、入力フォーマットがある # 標準入力を1行取得する（1行を文字として取得） # abcd --&amp;gt; &amp;#39;abcd&amp;#39; s = input() # 標準入力を2行取得する s = [input() for _ in range(2)] # --&amp;gt; [&amp;#39;a&amp;#39;, &amp;#39;b&amp;#39;] のリスト形式になる 文字分解 # s = &amp;#39;1100101&amp;#39; # list(s) --&amp;gt; [&amp;#39;1&amp;#39;, &amp;#39;1&amp;#39;, &amp;#39;0&amp;#39;, &amp;#39;0&amp;#39;, &amp;#39;1&amp;#39;, &amp;#39;0&amp;#39;, &amp;#39;1&amp;#39;] list(s) s = &amp;#39;101&amp;#39; s1,s2,s3 = list(s) # s1=1, s2=0, s3=1 行数指定なし 行数指定なしで
+1 1 1 1 2 2 3 4 5 6 6 .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://korsq.github.io/post/deep/batch_normalization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/post/deep/batch_normalization/</guid>
+      <description>Batch normalization Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://korsq.github.io/post/deep/convolution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/post/deep/convolution/</guid>
+      <description>畳み込み演算 Definitions カーネル、フィルター （同じ意味で使われたり表記ゆれがあるので、あくまでも一つの目安）
+カーネルとは、一つのチャンネルに対して畳み込み演算に用いられる重みのことで、$D_K\times D_K$ の次元を持っている。カーネルがまとまったものをフィルターと呼ぶ。
+パディング 入力画像のフチをある値で埋める拡張を行う操作。パディングがないと出力される特徴量マップは入力よりもサイズが小さくなる。 パディングを施すことで本来の画像の範囲を超えてカーネルを動かすことができるようになる。
+概要 conv
+入力チャンネル：ex. 通常の画像であればRGBの３チャンネル 出力チャンネル：用意したカーネルのセットの個数に対応 入力チャンネルと対応するカーネルの個数は同じ 数式 入力の一つのチャンネルに対する畳み込み演算を式で表すと： $$ u_{ij} = \sum_{p=0}^{D_K-1}\sum_{q=0}^{D_K-1} x_{i+p-1,j+q-1} \cdot k_{pq} $$ 入力チャンネルを$M$、出力チャンネルを$N$で表すと： $$ u_{ijn} = \sum_m^M \left( \sum_{p=0}^{D_K-1}\sum_{q=0}^{D_K-1} x_{i+p-1,j+q-1,m} \cdot k_{pqmn} \right) $$</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://korsq.github.io/post/deep/paper_mobilenets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/post/deep/paper_mobilenets/</guid>
+      <description>MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications Standard convolution カーネルを $K$、入力特徴量を $F$、出力特徴量を $G$ とする。出力チャンネル数を$N$、画素の番号を$(k,l)$で表すこととすると、ストライド1、パディングありな標準的な畳込み演算は： $$ G_{k,l,n} = \sum_{i,j,m} K_{i,j,m,n} \cdot F_{k+i-1,l+j-1,m} $$ で表される。
+MobileNets convolution </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://korsq.github.io/post/genome/note/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/post/genome/note/</guid>
+      <description>用語集 多型 塩基配列の違いを多型といい、配列の変化を変異という。一塩基多型をSNPという。 変異箇所における具体的な塩基配列の違いをアレル（ex. CとG）といい、アレルは一人2個持っている（父母由来）。 2つのアレルの組み合わせ（ex. CC/CG/GG）をジェノタイプという。アレル（ex. C か G）の出現個数・頻度をアレル頻度という。頻度の小さい方のアレルをマイナーアレルという。
+同じアレルの組み合わせをホモ接合型、異なる組み合わせをヘテロ接合型という。
+新たに（突然変異で）集団中にSNPが増えていく、また子孫に受け継がれないSNPもある。アレル頻度の低いSNPほど多く存在する（集団の中のある限られた集団だけが持っている、など）。 SNPが広がるには偶然が重ならないとだめで、そのためアレル頻度が数10%以上というものは減っていく。
+DNA DNA は相補的な2本鎖（相補鎖）が2本（父由来、母由来）、合計4本存在する。SNPのアレルという場合には父・母由来の染色体についての情報を比較していることになっている。
+参照配列 SNPなどが含まれている場合も、ヒトゲノムを作る際に使用されたサンプルが（たまたま）持っていたものを参照配列として使用している。そのため「このSNPは主なものであるので参照配列に入れている」といったことはしていない。
+ハプロタイプ ハプロタイプは、複数の対立遺伝子それぞれについてどちらの親から受け継いだ遺伝子かで分けたときに、片方の親由来の遺伝子の並びを意味する。
+SNP imputation SNP アレイには搭載されていない領域の遺伝型を推測する手法。リファレンスを当てはめることで、SNP間の穴あきの領域を推測する。
+生存に有利なSNPは選択圧である集団に広がったりする。 TopMed imputation server 大規模参照データを持ったサーバーがあり、各自のGWASデータをアップロードすることで imputation してくれるシステムのこと。
+HLA imputation　法 6版染色体上のMHC領域は多彩な人疾患に対するリスクとの強い関連を有する。MHC領域内は構造が複雑であ、複数のHLA遺伝子が存在しておりfine-mappingが 困難であった。
+連鎖不平衡（Linkage desequllibrium; LD） 近接するSNPのジェノタイプは似通っている。
+ポリジェニック仮説 GWAS関連統計量
+eQTL 効果 遺伝子多型が遺伝子発現量にもたらす影響のことを、eQTL効果という。
+1000 genomes project NGS を用いて多数の人類集団の結果を公開されている。リード情報（FATSQ）が出力されており、それらを解析することでゲノムデータを作成する。
+ゲノム配列を構築するためのNGSデータ解析ソフトとして、GATKが有名であり、GATK best proctices として公開されている。
+1000 Genomes：https://www.internationalgenome.org/
+VCF ファイル形式
+ped 形式 家系を対象とした連鎖解析の際に用いられていた表現形式
+ped 解析 bcftools, vcftools （VCFファイルからpedファイルへの変換） 用語 アレル：変異箇所における具体的な塩基配列の変化 ジェノタイプデータ：アレルの組み合わせのデータ マンハッタンプロット：P値をずらっと並べたもので、マンハッタン街に似ているから（マンハッタン距離とは関係ない）。 MDS（多次元尺度構成法） PLINK SNP データ解析ツール</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://korsq.github.io/post/mac/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/post/mac/docker/</guid>
+      <description>Docker daemon mac では docker daemon は Docker Desktop のアプリケーションを立ち上げることで起動できる。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://korsq.github.io/post/mac/homebrew/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/post/mac/homebrew/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://korsq.github.io/post/mac/zsh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/post/mac/zsh/</guid>
+      <description> mac の標準シェルが macOS Catalina（2019年）から bash から zsh に変わっている。
+補完 brew install zsh-completions $ mkdir -p ~/.zsh/completion エラー(1) zsh compinit: insecure directories, run compaudit for list $ compaudit There are insecure directories: /opt/homebrew/share 表示されているディレクトリの権限を 755 に修正するとエラーは出なくなる。
+フレームワーク 予め便利な設定ファイルが有効になっているものがフレームワークであり、また様々なプラグインがインストールされているもの。 プラグイン自体はフレームワークを使用しなくても適宜インストールできるものである。
+on-my-zsh インストールすると .zshrc が専用のものに置き換わり、そこでプラグインの読み込みなどの設定をする。ただし動作が遅い、というデメリットがある。 prezto on-my-zshの後継で、起動が遅いという欠点を克服したもの </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://korsq.github.io/post/r/note/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/post/r/note/</guid>
+      <description>基本動作 データ入出力 data &amp;lt;- read.table(file=&amp;#34;xxxx.txt&amp;#34;, header=T, sep=&amp;#34;\t&amp;#34;) header：第一行目がヘッダーかどうか sep：区切り文字の指定 write.table(file=&amp;#34;xxxx.txt&amp;#34;, sep=&amp;#34;\t&amp;#34;) その他 ?t.test：?でマニュアルを見る 統計検定 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://korsq.github.io/post/stat/stat_convergence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/post/stat/stat_convergence/</guid>
+      <description>確率変数列の収束について 確率変数列 $X_n$ の収束には概収束、平均収束、確率収束、分布収束がある。その中でも特に、大数の法則や中心極限定理で出てく確率収束と分布収束についてまとめる。
+確率収束 定義 確率変数列 $X_n$（たとえば標本平均 $X_n = \frac{1}{n}\sum_i X_i$） が確率変数 $X$ （定数でもよい）に確率収束するとは、
+$$ \forall\epsilon&amp;gt;0,~~~~\lim_{n\to\infty}P(|X_n - X| \geq\epsilon) = 0 $$
+となることを表し、$X_n \xrightarrow{p} X$ と記す。
+$X$の周りの区間にどれだけ狭い区間$(X-\epsilon, X+\epsilon)$をとっても、$n$を大きくすることで $X_n$ がその区間外になる確率をいくらでも小さくできる。
+例 サイコロを振って1が出る確率を測定するとする。試行回数を増やすと出る確率は $1/6$ 収束するはずであり、このときに確率収束するといえる。$i$ 回目にサイコロを振って1が出た場合に1、それ以外の場合にゼロを取る確率変数 $X_i$ を考える。$n$ 回試行したときの確率変数の平均は $$ X_n = \frac{1}{n}\sum_{i=1}^n X_i $$ と表され、$X_n \xrightarrow{p} \frac{1}{6}~~(n\to\infty)$ である。この収束を理論的に裏付けるのが大数の法則である。
+分布収束（法則収束、弱収束） 確率変数 $Z_n$ の分布 $F_n$ が特定の連続分布$F$に分布収束（弱収束、法則収束）するとは、
+$$ \lim_{n\to\infty} F_n(x) = F(x) $$
+となることを表し、$F_n\xrightarrow{d}F$と記す。この場合 $F$ を $Z_n$ の漸近分布（極限分布）といい、$Z_n$ は漸近的に分布$F$に従うという。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://korsq.github.io/post/stat/stat_law_of_large_numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/post/stat/stat_law_of_large_numbers/</guid>
+      <description>大数の弱法則 $X_1,X_2,&amp;hellip;\sim (\mu,\sigma^2)$のとき、$\overline{X}$ は $\mu$ に確率収束する。
+$X_1,&amp;hellip;,X_n$ が互いに独立に分布関数に従い、$E[X_i]=\mu, V[X_i]=\sigma^2$ が存在するとする。$n\to\infty$のときに標本平均 $\bar{X_n}$ が母平均に収束することを主張する。
+$$ \bar{X} \to \mu $$
+標本数 $n$ を大きくすると標本平均 $X_n$ は、個々の確率変数が従う母平均 $E =\mu$ に収束する。 適当な感覚 $E[X]=\mu, V[X]=\sigma^2$ が存在するとしているので、標本平均についての平均と分散はそれぞれ $$ E[1/n\sum X_i]=\mu, V[1/n\sum X_i]=\sigma^2/n $$ である。$n\to\infty$のとき分散がゼロになるので、標本平均は$\mu$の周りに分散ゼロで分布する。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://korsq.github.io/post/stat/stat_method_summary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/post/stat/stat_method_summary/</guid>
+      <description>t 検定 相関関係の検定 分割表検定 イエイツの補正 フィッシャー検定</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://korsq.github.io/post/stat/stat_pvalue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/post/stat/stat_pvalue/</guid>
+      <description>p-value 有意水準
+ボンフェローニ補正
+確率なのか？ p-value は</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>https://korsq.github.io/page/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/page/about/</guid>
+      <description>My name is Inigo Montoya. I have the following qualities:
+I rock a great mustache I&amp;rsquo;m extremely loyal to my family What else do you need?
+my history To be honest, I&amp;rsquo;m having some trouble remembering right now, so why don&amp;rsquo;t you just watch my movie and it will answer all your questions.</description>
+    </item>
+    
+    <item>
+      <title>深層学習</title>
+      <link>https://korsq.github.io/page/deep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/page/deep/</guid>
+      <description>My name is Inigo Montoya. I have the following qualities:
+I rock a great mustache I&amp;rsquo;m extremely loyal to my family What else do you need?
+my history To be honest, I&amp;rsquo;m having some trouble remembering right now, so why don&amp;rsquo;t you just watch my movie and it will answer all your questions.
+目次 test </description>
+    </item>
+    
+    <item>
+      <title>深層学習</title>
+      <link>https://korsq.github.io/post/deep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/post/deep/</guid>
+      <description>Index 最適化計算 畳み込み演算 Batch normalization 論文 </description>
+    </item>
+    
+    <item>
+      <title>複素関数</title>
+      <link>https://korsq.github.io/post/complex/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/post/complex/introduction/</guid>
+      <description>My name is Inigo Montoya. I have the following qualities:
+I rock a great mustache I&amp;rsquo;m extremely loyal to my family What else do you need?
+my history my history my history To be honest, I&amp;rsquo;m having some trouble remembering right now, so why don&amp;rsquo;t you just watch my movie and it will answer all your questions.</description>
+    </item>
+    
+    <item>
+      <title>複素関数論</title>
+      <link>https://korsq.github.io/page/complex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/page/complex/</guid>
+      <description>My name is Inigo Montoya. I have the following qualities:
+I rock a great mustache I&amp;rsquo;m extremely loyal to my family What else do you need?
+my history To be honest, I&amp;rsquo;m having some trouble remembering right now, so why don&amp;rsquo;t you just watch my movie and it will answer all your questions.
+目次 test </description>
+    </item>
+    
+    <item>
+      <title>複素関数論</title>
+      <link>https://korsq.github.io/post/complex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/post/complex/</guid>
+      <description>My name is Inigo Montoya. I have the following qualities:
+I rock a great mustache I&amp;rsquo;m extremely loyal to my family What else do you need?
+my history To be honest, I&amp;rsquo;m having some trouble remembering right now, so why don&amp;rsquo;t you just watch my movie and it will answer all your questions.
+目次 test </description>
+    </item>
+    
+  </channel>
+</rss>
