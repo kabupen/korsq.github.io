@@ -1,9 +1,11 @@
 # korsq.github.io
 
-## 数理統計
+## beautifulhugo
 
-- [収束について](stat/stat_convergence.md)
+### font 
 
-## 複素関数論
+```
+themes/beautifulhugo/static/css/main.css
+```
 
-- [複素関数論](complex/index.md)
+のfont-family
