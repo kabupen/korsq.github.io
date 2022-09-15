@@ -1,4 +1,5 @@
 baseurl = "https://korsq.github.io"
+publishDir = "docs"
 DefaultContentLanguage = "en"
 title = "korsq-que"
 theme = "beautifulhugo"
@@ -7,10 +8,6 @@ pygmentsStyle = "trac"
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
-#pygmentsUseClassic = true
-#pygmentOptions = "linenos=inline"
-#disqusShortname = "XXX"
-#googleAnalytics = "XXX"
 
 [Params]
 ##  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
@@ -89,7 +86,7 @@ pygmentsCodefencesGuessSyntax = true
 [[menu.main]]
     parent = "Blog"
     name = "数理統計"
-    url = "page/stat/"
+    url = "post/stat/"
     weight = 1
 
 [[menu.main]]

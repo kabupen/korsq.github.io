@@ -1,17 +1,29 @@
----
-title: 複素関数
-comments: true
----
 
-My name is Inigo Montoya. I have the following qualities:
+# 複素数について
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+## 基本性質
 
-What else do you need?
+複素数の基本性質、よく使用する関係式を列挙する。
 
-# my history
-## my history
-### my history
+- 複素数 $z=x+iy$
+- 共役複素数 $\bar{z} =x-iy$
+- 絶対値：$|z|=\sqrt{z\bar{z}}=\sqrt{x^2+y^2}=r$
+- 極形式：$z=re^{i\theta}$
+- 偏角：$\theta=\arg z$（$2n\pi$ の自由度を持っている）
+- 主値：偏角のうち、$[-\pi,\pi]$　の範囲の偏角のこと
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+
+## 絶対値
+
+複素数の絶対値は
+$$
+|z| = r = \sqrt{x^2+y^2} = \sqrt{z\bar{z}}
+$$
+である。
+
+
+## 極形式
+
+複素数 $z=a+ib$ は、絶対値 $|z|=r$、偏角 $\arg z=\theta$として $z=re^{i\theta}$とできる。偏角は$2n\pi$の自由度があるので一意には決まらないことに注意。$[0,2\pi]$の範囲の偏角を特に主値（principal value）という。
+
+複素平面上の点を表現するのに一意に決まらないのは偏角であって、複素平面上の点は一意に決まる
