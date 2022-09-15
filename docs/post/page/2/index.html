@@ -67,7 +67,7 @@
               <a class="navlinks-parent">Blog</a>
               <div class="navlinks-children">
                 
-                  <a href="/page/stat/">数理統計</a>
+                  <a href="/post/stat/">数理統計</a>
                 
                   <a href="/post/deep/">深層学習</a>
                 
@@ -205,6 +205,236 @@
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         
         <div class="posts-list">
+          
+            <article class="post-preview">
+    <a href="https://korsq.github.io/post/mac/homebrew/">
+        <h2 class="post-title"></h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on January 1, 0001
+  
+  
+  
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        
+        
+    </div>
+
+    
+
+</article>
+          
+            <article class="post-preview">
+    <a href="https://korsq.github.io/post/mac/zsh/">
+        <h2 class="post-title"></h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on January 1, 0001
+  
+  
+  
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <h1 id="heading"></h1>
+<p>mac の標準シェルが macOS Catalina（2019年）から <code>bash</code> から <code>zsh</code> に変わっている。</p>
+<h2 id="補完">補完</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install zsh-completions
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ mkdir -p ~/.zsh/completion
+</span></span></code></pre></div><h3 id="エラー1">エラー(1)</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">zsh compinit: insecure directories, run compaudit for list
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ compaudit
+</span></span><span class="line"><span class="cl">There are insecure directories:
+</span></span><span class="line"><span class="cl">/opt/homebrew/share
+</span></span></code></pre></div><p>表示されているディレクトリの権限を <code>755</code> に修正するとエラーは出なくなる。</p>
+<h2 id="フレームワーク">フレームワーク</h2>
+<p>予め便利な設定ファイルが有効になっているものがフレームワークであり、また様々なプラグインがインストールされているもの。
+プラグイン自体はフレームワークを使用しなくても適宜インストールできるものである。</p>
+<ul>
+<li>on-my-zsh
+<ul>
+<li>インストールすると <code>.zshrc</code> が専用のものに置き換わり、そこでプラグインの読み込みなどの設定をする。ただし動作が遅い、というデメリットがある。</li>
+</ul>
+</li>
+<li>prezto
+<ul>
+<li>on-my-zshの後継で、起動が遅いという欠点を克服したもの</li>
+</ul>
+</li>
+</ul>
+
+        
+    </div>
+
+    
+
+</article>
+          
+            <article class="post-preview">
+    <a href="https://korsq.github.io/post/r/note/">
+        <h2 class="post-title"></h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on January 1, 0001
+  
+  
+  
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <h1 id="基本動作">基本動作</h1>
+<h2 id="データ入出力">データ入出力</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">data &lt;- read.table(file=&#34;xxxx.txt&#34;, header=T, sep=&#34;\t&#34;)
+</span></span></code></pre></div><ul>
+<li>header：第一行目がヘッダーかどうか</li>
+<li>sep：区切り文字の指定</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">write.table(file=&#34;xxxx.txt&#34;, sep=&#34;\t&#34;)
+</span></span></code></pre></div><h2 id="その他">その他</h2>
+<ul>
+<li><code>?t.test</code>：?でマニュアルを見る</li>
+</ul>
+<h1 id="統計検定">統計検定</h1>
+
+        
+    </div>
+
+    
+
+</article>
+          
+            <article class="post-preview">
+    <a href="https://korsq.github.io/post/stat/">
+        <h2 class="post-title"></h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on January 1, 0001
+  
+  
+  
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <h2 id="数理統計">数理統計</h2>
+<h3 id="git-repositry">Git repositry</h3>
+<ul>
+<li><a href="https://github.com/korsq/mathstat">mathstat</a></li>
+</ul>
+<h3 id="contents">Contents</h3>
+<ul>
+<li><a href="section8.pdf">section8</a></li>
+</ul>
+
+        
+    </div>
+
+    
+
+</article>
+          
+            <article class="post-preview">
+    <a href="https://korsq.github.io/post/stat/stat_convergence/">
+        <h2 class="post-title"></h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on January 1, 0001
+  
+  
+  
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <h1 id="確率変数列の収束について">確率変数列の収束について</h1>
+<p>確率変数列 $X_n$ の収束には概収束、平均収束、確率収束、分布収束がある。その中でも特に、大数の法則や中心極限定理で出てく確率収束と分布収束についてまとめる。</p>
+<h2 id="確率収束">確率収束</h2>
+<h3 id="定義">定義</h3>
+<p>確率変数列 $X_n$（たとえば標本平均 $X_n = \frac{1}{n}\sum_i X_i$） が確率変数 $X$ （定数でもよい）に確率収束するとは、</p>
+<p>$$
+\forall\epsilon&gt;0,~~~~\lim_{n\to\infty}P(|X_n - X| \geq\epsilon) = 0
+$$</p>
+<p>となることを表し、$X_n \xrightarrow{p} X$ と記す。</p>
+<p>$X$の周りの区間にどれだけ狭い区間$(X-\epsilon, X+\epsilon)$をとっても、$n$を大きくすることで $X_n$ がその区間外になる確率をいくらでも小さくできる。</p>
+<h3 id="例">例</h3>
+<p>サイコロを振って1が出る確率を測定するとする。試行回数を増やすと出る確率は $1/6$ 収束するはずであり、このときに確率収束するといえる。$i$ 回目にサイコロを振って1が出た場合に1、それ以外の場合にゼロを取る確率変数 $X_i$ を考える。$n$ 回試行したときの確率変数の平均は
+$$
+X_n = \frac{1}{n}\sum_{i=1}^n X_i
+$$
+と表され、$X_n \xrightarrow{p} \frac{1}{6}~~(n\to\infty)$ である。この収束を理論的に裏付けるのが大数の法則である。</p>
+<h2 id="分布収束法則収束弱収束">分布収束（法則収束、弱収束）</h2>
+<p>確率変数 $Z_n$ の分布 $F_n$ が特定の連続分布$F$に分布収束（弱収束、法則収束）するとは、</p>
+<p>$$
+\lim_{n\to\infty} F_n(x) = F(x)
+$$</p>
+<p>となることを表し、$F_n\xrightarrow{d}F$と記す。この場合 $F$ を $Z_n$ の漸近分布（極限分布）といい、$Z_n$ は漸近的に分布$F$に従うという。</p>
+
+        
+    </div>
+
+    
+
+</article>
           
             <article class="post-preview">
     <a href="https://korsq.github.io/post/stat/stat_law_of_large_numbers/">
@@ -353,101 +583,12 @@ $$
         
         <h1 id="index">Index</h1>
 <ul>
+<li><a href="basic_math">基礎数学</a></li>
 <li><a href="optimization">最適化計算</a></li>
 <li><a href="convolution">畳み込み演算</a></li>
 <li><a href="batch_normalization">Batch normalization</a></li>
 </ul>
 <h1 id="論文">論文</h1>
-
-        
-    </div>
-
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://korsq.github.io/post/complex/introduction/">
-        <h2 class="post-title">複素関数</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on January 1, 0001
-  
-  
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <p>My name is Inigo Montoya. I have the following qualities:</p>
-<ul>
-<li>I rock a great mustache</li>
-<li>I&rsquo;m extremely loyal to my family</li>
-</ul>
-<p>What else do you need?</p>
-<h1 id="my-history">my history</h1>
-<h2 id="my-history-1">my history</h2>
-<h3 id="my-history-2">my history</h3>
-<p>To be honest, I&rsquo;m having some trouble remembering right now, so why don&rsquo;t you just watch <a href="http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29">my movie</a> and it will answer <strong>all</strong> your questions.</p>
-
-        
-    </div>
-
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://korsq.github.io/post/complex/">
-        <h2 class="post-title">複素関数論</h2>
-        
-        <h3 class="post-subtitle">
-            Why you&#39;d want to go on a date with me
-        </h3>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on January 1, 0001
-  
-  
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <p>My name is Inigo Montoya. I have the following qualities:</p>
-<ul>
-<li>I rock a great mustache</li>
-<li>I&rsquo;m extremely loyal to my family</li>
-</ul>
-<p>What else do you need?</p>
-<h3 id="my-history">my history</h3>
-<p>To be honest, I&rsquo;m having some trouble remembering right now, so why don&rsquo;t you just watch <a href="http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29">my movie</a> and it will answer <strong>all</strong> your questions.</p>
-<h1 id="目次">目次</h1>
-<ul>
-<li><a href="introduction">test</a></li>
-</ul>
 
         
     </div>
@@ -535,6 +676,18 @@ $$
 
 
 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css" integrity="sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js" integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {delimiters: [
+      {left: "$$", right: "$$", display: true},
+      {left: "$", right: "$", display: false}]
+    });
+  });
+</script>
 
 
     

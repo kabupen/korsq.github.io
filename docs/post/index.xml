@@ -17,6 +17,36 @@
     
     <item>
       <title></title>
+      <link>https://korsq.github.io/post/complex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/post/complex/</guid>
+      <description>複素数 複素数、複素平面 複素関数 複素関数の微分 複素関数の積分 べき級数 テイラー展開 ローラン級数 留数定理 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://korsq.github.io/post/deep/back_propagation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/post/deep/back_propagation/</guid>
+      <description>誤差逆伝播 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://korsq.github.io/post/deep/basic_math/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/post/deep/basic_math/</guid>
+      <description>基礎数学 微分 多変数関数の微分 $$ \nabla_x f(x) $$
+偏微分 全微分 $f$ が全微分可能であるとき $$ df = f_x(a,b)dx + f_y(a,b)dy $$ と表される。また、$f(x,y)$が$(a,b)$で全微分可能であるとき、この点で偏微分可能である。全微分は偏微分より強い概念である。
+方向微分 ある方向に関する微分係数のことで、偏微分は方向微分の一種。ある点$x$から単位ベクトルの定数倍$hu$の点との勾配は以下の式で計算することができ： $$ \lim_{h\to 0} \frac{f(\bm{x}+h\bm{u})-f(\bm{x})}{h} \equiv \nabla_u f(x) $$ これは$u$方向の方向微分として考えられる（$u$が軸であれば偏微分の式になる）。
+勾配 偏微分係数を成分に持つ$n$次元ベクトルのことで、$\nabla f$と表す。勾配ベクトルとも呼ばれる。 勾配の方向は最大傾斜の後方であり、その大きさは勾配の大きさである。</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://korsq.github.io/post/deep/batch_normalization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -32,9 +62,24 @@
       <guid>https://korsq.github.io/post/deep/convolution/</guid>
       <description>畳み込み演算 Definitions カーネル、フィルター （同じ意味で使われたり表記ゆれがあるので、あくまでも一つの目安）
 カーネルとは、一つのチャンネルに対して畳み込み演算に用いられる重みのことで、$D_K\times D_K$ の次元を持っている。カーネルがまとまったものをフィルターと呼ぶ。
+ストライド カーネルを何ピクセルずつ（何マスずつ）ずらすかを指定するパラメーター。
 パディング 入力画像のフチをある値で埋める拡張を行う操作。パディングがないと出力される特徴量マップは入力よりもサイズが小さくなる。 パディングを施すことで本来の画像の範囲を超えてカーネルを動かすことができるようになる。
 概要 conv
 入力チャンネル：ex. 通常の画像であればRGBの３チャンネル 出力チャンネル：用意したカーネルのセットの個数に対応 入力チャンネルと対応するカーネルの個数は同じ 数式 入力の一つのチャンネルに対する畳み込み演算を式で表すと： $$ u_{ij} = \sum_{p=0}^{D_K-1}\sum_{q=0}^{D_K-1} x_{i+p-1,j+q-1} \cdot k_{pq} $$ 入力チャンネルを$M$、出力チャンネルを$N$で表すと： $$ u_{ijn} = \sum_m^M \left( \sum_{p=0}^{D_K-1}\sum_{q=0}^{D_K-1} x_{i+p-1,j+q-1,m} \cdot k_{pqmn} \right) $$</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://korsq.github.io/post/deep/optimization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/post/deep/optimization/</guid>
+      <description>最適化計算 参考文献 https://www.deeplearningbook.org/contents/numerical.html Introduction 最適化（Optimization）とは深層学習の領域では主に、関数 $f(x)$ を最小化するという文脈で用いられる（optimization自体は関数を$x$に対して最小化 or 最大化するという意味）。関数 $f(x)$ は cost function, loss function, error function などと呼ばれたりする。
+Gradient Descent 関数 $f$ を最小化するには、$f$ の最も変化率の大きい方向を見つければよく、それは勾配（gradient）に他ならない。 勾配が正方向に大きければ（=上り坂）最適化する方向としてはその逆に向かえばよく、負方向であれば同様に逆に向かえば良い。この性質を利用して最小化する手法が最急降下法（method of steepest descent）もしくは勾配降下法（gradient descent）と呼ばれる手法である。
+勾配降下法では関数の勾配（$grad f$）の値と符号に着目する。値が大きい場合は変化率が大きい場所であるので、よりそこから離れる方向にパラメーターを更新する必要がある。 また符号もどちら方向に更新するかに重要になってくる。微分係数の符号と逆側に微小にパラメータを動かすことで、関数の最小値に近づくことができる。 $$ x^\prime = x - \epsilon \nabla f(x) $$ どれくらいの割合更新するかを$\epsilon$というパラメータで調整し、これは学習率と呼ばれるものである。
+ちなみに ここで関数$f(x)$に対して$\bm{u}$方向の微分（方向微分）を考える。
+Stochastic gradient descent (SGD) 確率勾配降下法（SGD）は強力な最適化手法の一種であり、勾配降下法とやっていることは何も変わらない。ただしミニバッチという考え方を使って小刻みに重みを更新することになる。
+まず勾配降下法を用いたパラメータの更新について。学習に使用するデータサンプルが $m$ 個あったときに、勾配降下法ではその一つ一つに対して損失関数の勾配を計算する必要が生じる： $$ \nabla_\theta J(\theta) = \frac{1}{m} \sum_{i=1}^m \nabla_\theta L(x_i,y_i,\theta) $$ サンプル数 $m$ 回分の勾配計算をして、その平均値を使って更新する： $$ \theta^\prime = \theta - \epsilon \nabla_\theta J(\theta) $$</description>
     </item>
     
     <item>
@@ -114,6 +159,15 @@ on-my-zsh インストールすると .zshrc が専用のものに置き換わ�
     
     <item>
       <title></title>
+      <link>https://korsq.github.io/post/stat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://korsq.github.io/post/stat/</guid>
+      <description>数理統計 Git repositry mathstat Contents section8 </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://korsq.github.io/post/stat/stat_convergence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -167,30 +221,7 @@ $$ \bar{X} \to \mu $$
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://korsq.github.io/post/deep/</guid>
-      <description>Index 最適化計算 畳み込み演算 Batch normalization 論文 </description>
-    </item>
-    
-    <item>
-      <title>複素関数</title>
-      <link>https://korsq.github.io/post/complex/introduction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://korsq.github.io/post/complex/introduction/</guid>
-      <description>My name is Inigo Montoya. I have the following qualities:
-I rock a great mustache I&amp;rsquo;m extremely loyal to my family What else do you need?
-my history my history my history To be honest, I&amp;rsquo;m having some trouble remembering right now, so why don&amp;rsquo;t you just watch my movie and it will answer all your questions.</description>
-    </item>
-    
-    <item>
-      <title>複素関数論</title>
-      <link>https://korsq.github.io/post/complex/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://korsq.github.io/post/complex/</guid>
-      <description>My name is Inigo Montoya. I have the following qualities:
-I rock a great mustache I&amp;rsquo;m extremely loyal to my family What else do you need?
-my history To be honest, I&amp;rsquo;m having some trouble remembering right now, so why don&amp;rsquo;t you just watch my movie and it will answer all your questions.
-目次 test </description>
+      <description>Index 基礎数学 最適化計算 畳み込み演算 Batch normalization 論文 </description>
     </item>
     
   </channel>
